@@ -1,0 +1,44 @@
+# Public commit allowlist: everything else is local/internal by default.
+/*
+!/.gitignore
+!/.gitattributes
+!/LICENSE
+!/README.md
+!/requirements*.txt
+!/pyproject.toml
+!/setup.cfg
+!/setup.py
+!/MANIFEST.in
+!/src/
+
+# Publish application source and its example configuration only.
+/src/**
+!/src/**/
+!/src/**/*.py
+
+!/src/**/*.yaml
+!/src/**/*.yml
+
+# Internal instructions, documentation, tests, captures and work directories.
+/.legacy/
+/AGENTS.md
+/docs/
+/tests/
+/.testfiles/
+/.bash-references/
+/.work-references/
+/.venv*/
+/offline-output*/
+/receiver-output/
+
+# Generated/private files are excluded even inside allowed directories.
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.env
+**/.env.*
+**/*.log
+**/*.tmp
+**/*.bak

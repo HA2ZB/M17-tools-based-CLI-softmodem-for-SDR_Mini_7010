@@ -1,0 +1,6 @@
+# Half-duplex Pluto USB, tested on Windows x64 / Python 3.11.5.
+# Native Windows libiio 0.25 DLL and SoX / m17-mod are external dependencies.
+numpy==2.4.6
+scipy==1.17.1
+PyYAML==6.0.3
+sounddevice==0.5.3

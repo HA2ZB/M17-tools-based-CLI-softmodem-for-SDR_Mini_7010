@@ -6,6 +6,16 @@ paths:
 callsign: HA2ZB
 destination: ALL
 
+# Half-duplex Pluto USB; independent of FT audio settings. No Windows level changes.
+pluto:
+  # Set the current usb: URI here or pass --uri; no ambiguous auto-selection.
+  uri: null
+  libiio_dll: "C:/libiio/Windows-VS-2022-x64/libiio.dll"
+  can: 0
+  rx_audio_device: "JBL TUNE 305C USB-C"
+  tx_microphone:
+    device_contains: "Mikrofon (JBL TUNE 305C USB-C)"
+
 ptt:
   com_port: COM8    #RTS pin is controlled
 

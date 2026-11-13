@@ -1,0 +1,4 @@
+# Native USB Mini RX. External: Windows x64 libiio 0.25, m17-demod 2.2.
+numpy==2.4.6
+scipy==1.17.1
+sounddevice==0.5.3
